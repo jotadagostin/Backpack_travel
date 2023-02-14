@@ -1,12 +1,12 @@
 const form = document.getElementById("novoItem");
+const lista = document.getElementById("lista");
 
 form.addEventListener("submit", (evento) => {
   evento.preventDefault();
 
   criaElemento(
     evento.target.elements["nome"].value,
-    evento.target,
-    elements["quantidade"].value
+    evento.target.elements["quantidade"].value
   );
 });
 
@@ -19,8 +19,6 @@ function criaElemento(nome, quantidade) {
 
   novoItem.appendChild(numeroItem);
   novoItem.innerHTML += nome;
-
-  const lista = document.getElementById("lista");
 
   lista.appendChild(novoItem);
 }
