@@ -15,16 +15,16 @@
     <main class="conteudo">
         <div class="principal">
             <div class="mochila"></div>
-            <form action="" class="adicionar">
+            <form action="" class="adicionar" id="novoItem">
                 <label for="item">Name</label>
                 <input type="text" name="nome" id="nome">
                 <label for="item">Quantity</label>
                 <input type="number" name="quantidade" id="quantidade">
-                <input type="submit" value="Adicionar" class="cadastrar">
+                <input type="submit" value="Send" class="cadastrar">
             </form>
         </div>
         
-        <ul class="lista">
+        <ul class="lista" id="lista">
             <li class="item"><strong>7</strong>Shirts</li>
             <li class="item"><strong>1</strong>Pants</li>
             <li class="item"><strong>3</strong>Jackets</li>
@@ -36,5 +36,7 @@
             <li class="item"><strong>1</strong>Plug Adapter</li>
         </ul>
     </main>
+
+    <script src="./javascript/main.js"></script>
 </body>
 </html>
