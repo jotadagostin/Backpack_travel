@@ -130,3 +130,19 @@ html {
     font-weight: 400;
 }
 
+@media screen and (max-width: 720px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+}
+
+@media screen and (max-width: 480px) {
+    .principal {
+        min-width: 440px;
+        padding: 6px;
+        margin:1px 5px;
+    }
+}
